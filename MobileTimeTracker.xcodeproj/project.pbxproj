@@ -34,13 +34,13 @@
 		B1C7A140156B66480075A03B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A13F156B66480075A03B /* AppDelegate.m */; };
 		B1C7A143156B66480075A03B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A142156B66480075A03B /* MainViewController.m */; };
 		B1C7A145156B66480075A03B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C7A144156B66480075A03B /* MainViewController.xib */; };
-		B1C7A149156B66480075A03B /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = B1C7A148156B66480075A03B /* verify.sh */; };
 		B1C7A15B156B6BEB0075A03B /* www in Resources */ = {isa = PBXBuildFile; fileRef = B1C7A15A156B6BEB0075A03B /* www */; };
 		B1C7A160156B6F940075A03B /* DGPTimeTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A15D156B6F940075A03B /* DGPTimeTracker.m */; };
 		B1C7A161156B6F940075A03B /* Geofencing.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A15F156B6F940075A03B /* Geofencing.m */; };
 		B1C7A168156B71B10075A03B /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A163156B71B10075A03B /* Event.m */; };
 		B1C7A169156B71B10075A03B /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A165156B71B10075A03B /* NSDate+Utils.m */; };
 		B1C7A16A156B71B10075A03B /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A167156B71B10075A03B /* Project.m */; };
+		B1C7A170156B75770075A03B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C7A16F156B75770075A03B /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,7 +77,6 @@
 		B1C7A142156B66480075A03B /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
 		B1C7A144156B66480075A03B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		B1C7A147156B66480075A03B /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
-		B1C7A148156B66480075A03B /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
 		B1C7A15A156B6BEB0075A03B /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		B1C7A15C156B6F940075A03B /* DGPTimeTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGPTimeTracker.h; path = Plugins/DGPTimeTracker.h; sourceTree = "<group>"; };
 		B1C7A15D156B6F940075A03B /* DGPTimeTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGPTimeTracker.m; path = Plugins/DGPTimeTracker.m; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		B1C7A165156B71B10075A03B /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Utils.m"; path = "Classes/NSDate+Utils.m"; sourceTree = "<group>"; };
 		B1C7A166156B71B10075A03B /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = Classes/Project.h; sourceTree = "<group>"; };
 		B1C7A167156B71B10075A03B /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = Classes/Project.m; sourceTree = "<group>"; };
+		B1C7A16F156B75770075A03B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C7A170156B75770075A03B /* CoreData.framework in Frameworks */,
 				B1C7A0F8156B66480075A03B /* Foundation.framework in Frameworks */,
 				B1C7A0FA156B66480075A03B /* UIKit.framework in Frameworks */,
 				B1C7A0FC156B66480075A03B /* CoreGraphics.framework in Frameworks */,
@@ -143,6 +144,7 @@
 		B1C7A0F6156B66480075A03B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1C7A16F156B75770075A03B /* CoreData.framework */,
 				B1C7A0F7156B66480075A03B /* Foundation.framework */,
 				B1C7A0F9156B66480075A03B /* UIKit.framework */,
 				B1C7A0FB156B66480075A03B /* CoreGraphics.framework */,
@@ -182,7 +184,6 @@
 				B1C7A119156B66480075A03B /* MobileTimeTracker-Prefix.pch */,
 				B1C7A13B156B66480075A03B /* Cordova.plist */,
 				B1C7A144156B66480075A03B /* MainViewController.xib */,
-				B1C7A148156B66480075A03B /* verify.sh */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -266,7 +267,6 @@
 				B1C7A0EE156B66480075A03B /* Resources */,
 				B1C7A0EF156B66480075A03B /* Sources */,
 				B1C7A0F0156B66480075A03B /* Frameworks */,
-				B1C7A0F1156B66480075A03B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -320,28 +320,11 @@
 				B1C7A13A156B66480075A03B /* Capture.bundle in Resources */,
 				B1C7A13C156B66480075A03B /* Cordova.plist in Resources */,
 				B1C7A145156B66480075A03B /* MainViewController.xib in Resources */,
-				B1C7A149156B66480075A03B /* verify.sh in Resources */,
 				B1C7A15B156B6BEB0075A03B /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B1C7A0F1156B66480075A03B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1C7A0EC156B66480075A03B /* Sources */ = {
